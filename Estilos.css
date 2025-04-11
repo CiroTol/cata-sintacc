@@ -1,0 +1,214 @@
+body {
+  background-color: var(--rosa-claro);
+  color: var(--negro);
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 60px;
+  scroll-padding-top: 80px;
+}
+
+:root {
+  --rosa-pastel: #f9c8d9;
+  --rosa-claro: #ffe8f0;
+  --negro: #222;
+  --gris: #555;
+}
+
+  .navbar {
+    background-color: #ffd6e8 !important; 
+  }
+  
+  .nav-link {
+    color: #000 !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    color: var(--gris);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    background-color: #ffd6e8; 
+    padding: 100px 20px;
+    background-image:url(Imagenes/FondoHero1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 214, 232, 0.85);
+    mix-blend-mode: multiply;
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  
+  .card-title {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .card-text {
+    color: #333;
+  }
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  #nosotros h2 {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  #nosotros p {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  #contacto input,
+#contacto textarea {
+  border-radius: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+#contacto button {
+  border-radius: 0.75rem;
+}
+
+footer a {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffb6c1; 
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 999px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-float i {
+  font-size: 1.3rem;
+}
+
+#testimonios .carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+#testimonios p {
+  font-style: italic;
+  color: #333;
+}
+
+#testimonios h6 {
+  font-weight: normal;
+}
+
+#categorias .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#ubicacion ul {
+  padding-left: 1rem;
+}
+
+#ubicacion ul li {
+  margin-bottom: 8px;
+}
+
+h2, h5 {
+  color: var(--negro);
+}
+
+.card-title {
+  color: var(--negro);
+}
+
+.btn-cata {
+  background-color: var(--rosa-pastel);
+  color: var(--negro);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cata:hover {
+  background-color: var(--negro);
+  color: white;
+}
+
+section {
+  animation: fadeIn 0.8s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+    text-align: center;
+  }
+  .whatsapp-float {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
